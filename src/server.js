@@ -11,7 +11,6 @@ app.listen(5000, () => console.log("Server Running..."));
 
 const pollData = require("./data.json");
 app.get("/poll", function (req, res) {
-  console.log(pollData, "Here's the poll data");
   res.send(pollData);
 });
 
