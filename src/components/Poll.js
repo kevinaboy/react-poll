@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Poll.css";
 
-function StrawPoll() {
+function Poll() {
 
   const [voteData, setVoteData] = useState();
   const [totalVotes, setTotalVotes] = useState(0);
@@ -55,7 +55,7 @@ function StrawPoll() {
 
   return (
     <div className="poll">
-      <h1>Which option do you like the best?</h1>
+      <h1>Which superhero should we feature next?</h1>
       <ul className={voted ? "results" : "options"}>{pollOptions}</ul>
       <p>Total Votes: {totalVotes}</p>
     </div>
@@ -63,4 +63,4 @@ function StrawPoll() {
 
 }
 
-export default StrawPoll;
+export default Poll;
